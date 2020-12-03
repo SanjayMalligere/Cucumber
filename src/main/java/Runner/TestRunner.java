@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features  = "/Users/sanjms/Documents/JavaTraining2020/FreeCRMBDDFrameworkCucumber/src/main/java/Feature/taggedhooks.feature",  //path of feature file
 		glue={"stepDefinitions"}, //path of step definition file
-		format={"pretty","html:test-output"}, // to generate different types of reporting
+		format={"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, // to generate different types of reporting
 		monochrome = true, //dispaly the console output in proper readable format
 		dryRun = false, // to check the mapping between feature file and step definition file
 		strict = true, // it will check if any of the step is not defined in step definition file 
